@@ -1,0 +1,47 @@
+<ion-header id="header">
+
+</ion-header>
+
+<ion-content>
+  <ion-row class="back">
+    <ion-back-buton  mat-menu-item [routerLink]="['/home']"><ion-icon name="arrow-back-outline"></ion-icon>Atrás</ion-back-buton>
+    </ion-row>
+  <ion-card id="card">
+    <ion-card-content>
+      <ion-list class="list" >
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input  type="text" required #nombre [(ngModel)]="user.nombre">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input  type="text" required #Apellido [(ngModel)]="user.apellido">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Numero Telefonico</ion-label>
+          <ion-input  type="number" required #numero [(ngModel)]="user.numero">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label   position="floating">Email</ion-label>
+          <ion-input type='text' required #email [(ngModel)]="user.email"> 
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input  type="password" required #password [(ngModel)]="user.password">
+          </ion-input>
+        </ion-item>
+        <ion-row >
+          <ion-col>
+            <ion-button  (click)= "registrar()" class="boton"  color="danger"  >
+              Registrar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-list>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

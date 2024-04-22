@@ -1,0 +1,15 @@
+//color,tamaño y posicion del background
+
+#head{
+  background:  #ffd87e;
+}
+div{
+    background:  #ffd87e ;
+    height: 100%;
+    position: relative;
+  }
+  //posicion del logotipo de la app
+  img{
+    position: absolute;
+    bottom: 30%;
+  }

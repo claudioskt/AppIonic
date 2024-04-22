@@ -1,0 +1,54 @@
+ion-content{ 
+    --ion-background-color: #ffd87e ;
+  }
+  ion-back-buton{
+    color: rgb(253, 247, 247);
+    background-color :  #ffd87e;
+    margin-top: 20px;
+    
+}
+
+.back{
+  margin-top: 20px;
+  margin-left: 10px;
+  
+}
+
+#head{
+  background:  #ffd87e ;
+}
+#logoAPP{
+  margin-top: 15px;
+  width: 200px;
+  margin-left: 20%;
+}
+
+ion-content{ 
+  --ion-background-color: #ffd87e   ;
+}
+ion-card ion-card-content{
+  background:  #ffd87e
+
+}
+ion-card ion-card-content ion-input{
+  border-radius: 5px;
+  background-color:  #97b8a5 ;
+  color: whitesmoke;
+}
+
+
+.mat-menu-item {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#nombre{
+  color: red;
+}
+#nombre2{
+  color: red;
+}#email{
+  color: red;
+}#email2{
+  color: red;
+}

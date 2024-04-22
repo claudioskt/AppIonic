@@ -1,0 +1,11 @@
+{
+  "appId": "com.example.app",
+  "appName": "registromascotasapp",
+  "bundledWebRuntime": true,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

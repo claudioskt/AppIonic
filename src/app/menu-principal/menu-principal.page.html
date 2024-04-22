@@ -1,0 +1,31 @@
+<ion-header id="head" >
+  
+</ion-header>
+
+<ion-content>
+  <ion-row class="back">
+    <ion-back-buton  mat-menu-item [routerLink]="['/home']"><ion-icon name="arrow-back-outline"></ion-icon>salir</ion-back-buton>
+  </ion-row>
+      <img id="logoAPP" src="../../assets/icon/RescuePet.png" alt="logoAPP">
+      <ion-row >
+        <ion-col>
+          <ion-button (click)= "registramascota()" class="boton0"  color="danger" >
+            Registrar Mascota
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col>
+          <ion-button   (click)= "vermascota()" class="boton01"color="danger"   >
+            Ver Mis Mascotas
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col>
+          <ion-button   [routerLink]="['/lector-qr']" class="boton1"color="danger"   >
+            Buscar Informacion de Mascota
+          </ion-button>
+        </ion-col>
+      </ion-row>
+</ion-content>

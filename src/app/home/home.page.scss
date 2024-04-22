@@ -1,0 +1,51 @@
+#head{
+  background:  #ffd87e;
+}
+#logoAPP{
+  margin-top: 15px;
+  width: 200px;
+  margin-left: 20%;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+ion-content{ 
+  --ion-background-color: #ffd87e ;
+}
+
+ion-card ion-card-content ion-input:hover{
+  opacity:90% ;
+}
+ion-row ion-col ion-button{
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+#nombre_form{
+  color: red;
+}
+
+
+.boton0{
+  padding: 20%;
+  height: 60px;
+  text-align: center;
+  margin-left: 6.5%;
+}
+.boton1{
+  padding: 20%;
+  height: 60px;
+  text-align: center;
+  margin-left: 8.5%;
+}
+
+.boton-2{
+  padding: 20%;
+  height: 60px;
+  text-align: center;
+  margin-left: -18%;
+  
+}

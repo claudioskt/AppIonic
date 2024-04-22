@@ -1,0 +1,20 @@
+<ion-header id="head" >
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-row class="back">
+  <ion-back-buton  mat-menu-item (click)="salir()"><ion-icon name="arrow-back-outline"></ion-icon>Atras</ion-back-buton>
+  </ion-row>
+  <img id="logoAPP" src="../../assets/icon/RescuePet.png" alt="logoAPP">
+  <br>
+
+  <ion-row class="label">
+    <ion-input class="input" placeholder="Identificador" type="text" [(ngModule)] = "consulta.identificador">
+    </ion-input>
+  </ion-row>
+  <ion-button  (click)="consultarId()"class="boton1"  color="danger">
+    Buscar Informacion
+  </ion-button>
+</ion-content>

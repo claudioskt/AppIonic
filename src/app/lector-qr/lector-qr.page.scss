@@ -1,0 +1,56 @@
+#head{
+    background:  #ffd87e;
+}
+
+#iconQR{
+    width:200px; height: 200px;
+    background-color: #ffd87e ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-left: 18%;
+}
+ion-content{ 
+    --ion-background-color: #ffd87e   ;
+}
+
+#card{
+    
+    --ion-background-color:  #ffd87e ;
+    position: relative;
+    padding-left: 20%;
+}
+
+.back{
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+ion-button{
+    margin-left:28%;
+}
+ion-back-buton{
+    color: rgb(255, 253, 253);
+    background-color:  #ffd87e;
+}
+.img{
+    padding-top: 10%;
+}
+
+.label{
+    margin: 20px;
+    color: black;
+
+}
+
+.input{
+    border :solid #f18b7e;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.boton1{
+    margin-left: 17%;
+}

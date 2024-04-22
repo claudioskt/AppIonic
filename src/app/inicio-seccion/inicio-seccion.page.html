@@ -1,0 +1,34 @@
+<ion-header id="header">
+
+</ion-header>
+
+<ion-content>
+  <ion-row class="back">
+    <ion-back-buton  mat-menu-item (click)="salir()"><ion-icon name="arrow-back-outline"></ion-icon>Atrás</ion-back-buton>
+    </ion-row>
+  <img id="logoAPP" src="../../assets/icon/RescuePet.png" alt="logoAPP">
+  <ion-card id="card">
+    <ion-card-content>
+  <ion-list class="list" >
+      <ion-item>
+        <ion-label   position="floating">Email</ion-label>
+        <ion-input type='text' required #email [(ngModel)] = "user.email">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input   type="password" required #password [(ngModel)] = "user.password">
+        </ion-input>
+      </ion-item>
+      <ion-row >
+        <ion-col>
+          <ion-button  (click)="ingresar()" class="boton"  color="danger"  >
+            Iniciar Sesión
+          </ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-list>
+  <br/>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

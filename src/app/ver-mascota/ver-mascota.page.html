@@ -1,0 +1,70 @@
+<ion-header id="header">
+
+</ion-header>
+
+<ion-content>
+  <div *ngIf ='enableNewImage'>
+    <img class="foto" [src]="newMascota.foto">
+  </div>
+  <div *ngIf ='enableNewlogo'>
+    <img id="logoAPP" src="../../assets/icon/RescuePet.png" alt="logoAPP">
+  </div>
+  
+  
+    <ion-card-content>
+  <ion-list class="list" >
+    <div *ngIf ='enableNewPet'>
+      <ion-item>
+        <ion-label   position="floating">Identificador</ion-label>
+        <ion-input type='text' required [(ngModel)]="newMascota.id">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label   position="floating">Nombre Mascota</ion-label>
+        <ion-input type='text' required [(ngModel)]="newMascota.nombre">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Raza</ion-label>
+        <ion-input   type="text" required [(ngModel)]="newMascota.Raza">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Dueño</ion-label>
+        <ion-input   type="text" required [(ngModel)]="newMascota.dueno" >
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Numero Dueño</ion-label>
+        <ion-input   type="number" required [(ngModel)]="newMascota.numerodueno">
+        </ion-input>
+      </ion-item>
+      <ion-button class="atras"  (click)="NoverMascota()"  color="danger" >Atras</ion-button>
+    </div>
+    <div *ngIf ='enableNewPet2'>
+      <br>
+    <ion-label class="separador">Mascotas Registradas</ion-label>
+    <ion-item *ngFor ="let pet of mascotas">
+      <ion-label>{{pet.nombre}}</ion-label>
+      <ion-buttons  slot="end">
+        <ion-button (click)="verMascota()" >
+          <ion-button (click)="newMascota = pet">
+            <ion-icon name="eye" color="dark" slot="icon-only"></ion-icon>
+          </ion-button>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+      <ion-row >
+        <ion-col>
+          <ion-button (click)="salir()"class="boton"  color="danger"  >
+            volver
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+    
+  </ion-list>
+    </ion-card-content>
+
+</ion-content>

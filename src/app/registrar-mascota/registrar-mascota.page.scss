@@ -1,0 +1,70 @@
+#head{
+    background:  #ffd87e;
+}
+#logoAPP{
+    margin-top: 15px;
+    height: 100px;
+    margin-left: 20%;
+}
+
+#card{
+    margin-top: 50px;
+    background-color:  #ffd87e;
+}
+
+
+
+ion-content{ 
+    --ion-background-color: #ffd87e ;
+}
+
+#mainForm{
+    border-radius: 5px;
+    color: whitesmoke
+    ;
+}
+ion-card ion-card-content ion-input:hover{
+    opacity:90% ;
+}
+ion-row ion-col ion-button{
+    padding-top:10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+#nombre_form{
+    color: red;
+}
+
+.list{
+    background-color: #97b8a5;
+    border-radius: 5%;
+}
+
+.boton{
+    padding: 20%;
+    height: 60px;
+    border-radius: 5%;
+    margin-left: 8%;
+}
+
+.back{
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.normal{
+    text-align: center;
+    margin-left: 35%;
+}
+
+.img{
+    margin-left: 40%;
+}
+
+.foto{
+    text-align: center;
+    margin-top: 20px;
+    height: 150px;
+    margin-left: 32%;
+}

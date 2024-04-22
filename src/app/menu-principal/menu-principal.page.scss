@@ -1,0 +1,43 @@
+#head{
+    background:  #ffd87e;
+}
+#logoAPP{
+    margin-top: 15px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+
+ion-content{ 
+    --ion-background-color: #ffd87e ;
+}
+
+ion-card ion-card-content ion-input:hover{
+    opacity:90% ;
+}
+ion-row ion-col ion-button{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.back{
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.boton0{
+    height: 60px;
+    text-align: center;
+    margin-left: 18%;
+}
+.boton01{
+    height: 60px;
+    text-align: center;
+    margin-left: 20%;
+}
+.boton1{
+    padding: 20%;
+    height: 60px;
+    text-align: center;
+    margin-left: -18%;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "regitrapp",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

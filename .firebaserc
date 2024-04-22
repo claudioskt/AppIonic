@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portafolio-4ffaa": {
+      "hosting": {
+        "app": [
+          "portafolio-4ffaa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portafolio-4ffaa"
+  }
+}

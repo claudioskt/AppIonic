@@ -1,0 +1,64 @@
+<ion-header id="header">
+
+</ion-header>
+
+<ion-content>
+  <ion-row class="back">
+    <ion-back-buton  mat-menu-item (click)="salir()"><ion-icon name="arrow-back-outline"></ion-icon>Atrás</ion-back-buton>
+    </ion-row>
+  <img class="foto"  [src]="newImage">
+
+    <ion-card-content>
+  <ion-list class="list" >
+      <ion-item>
+        <ion-label   position="floating">Nombre Mascota</ion-label>
+        <ion-input type='text' required [(ngModel)]="newMascota.nombre">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Raza / Especie </ion-label>
+          <ion-select interface="popover" [(ngModel)]= "newMascota.Raza">
+            <ion-select-option value="Perro">Perro</ion-select-option>
+            <ion-select-option value="Gato">Gato</ion-select-option>
+            <ion-select-option value="Huron">Huron</ion-select-option>
+            <ion-select-option value="Conejo">Conejo</ion-select-option>
+            <ion-select-option value="Otro">Otro</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Dueño</ion-label>
+        <ion-input   type="text" required [(ngModel)]="newMascota.dueno" >
+          
+
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Numero Dueño</ion-label>
+        <ion-input   type="number" required [(ngModel)]="newMascota.numerodueno">
+        </ion-input>
+      </ion-item>
+      <ion-label class="normal">
+        Foto Mascota
+      </ion-label>
+      <ion-buttons class="img"slot="end">
+        <ion-button >
+          <label for="file-upload">
+            <ion-icon  slot="icon-only" color="dark" name="images"></ion-icon>
+          </label>
+          
+          <ion-input  (change)="newImageUpload($event)" id="file-upload"   type="file" accept="image/*"></ion-input>
+        </ion-button>
+      </ion-buttons>
+      
+
+      <ion-row >
+        <ion-col>
+          <ion-button (click)="guardarMascota()"class="boton"  color="danger"  >
+            Registrar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-list>
+    </ion-card-content>
+
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header id="head" >
+  
+</ion-header>
+
+
+
+<ion-content>
+  <ion-row class="back">
+  <ion-back-buton  mat-menu-item [routerLink]="['/inicio-seccion']"><ion-icon name="arrow-back-outline"></ion-icon>Atrás</ion-back-buton>
+</ion-row>
+  <img id="logoAPP" src="../../assets/icon/RescuePet.png" alt="logoAPP">
+  <ion-card id="card">
+    <ion-card-content>   
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+      <ion-label position="floating" id="name2" (click)="animar()">Nombre</ion-label>
+      <ion-input formControlName="name" type="text" id="name1" (click)="animar4()"></ion-input>
+
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required" id="nombre">
+      ¡Se requiere el nombre!
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.minlength"id="nombre2">
+      El nombre debe ser de al menos 2 carácteres
+    </span>
+
+    <br>
+
+      <ion-label position="floating"id="mail2" (click)="animar2()">Email</ion-label>
+      <ion-input formControlName="email" type="email" id="mail1" (click)="animar3()"></ion-input>
+    
+  
+
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required"id="email">
+    ¡Se requiere el e-mail!
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern"id="email2">
+      Por favor ingrese un e-mail válido.
+    </span>
+    <ion-row  id="ingreso1" *ngIf="!ionicForm.valid" (click)= "animar5()">
+      <ion-col >
+        <ion-button type="submit" color="danger" expand="block" [disabled]="!ionicForm.valid" (click)="showToast()" >Recuperar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row  id="ingreso2" *ngIf="!ionicForm.invalid">
+      <ion-col >
+        <ion-button type="submit" color="danger" expand="block" [disabled]="!ionicForm.valid" (click)="showToast()" >Recuperar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-card-content>
+</ion-card>
+</ion-content>
